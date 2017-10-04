@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "babel-node index.js"
+    "start": "seed=seed.json babel-node index.js"
   },
   "dependencies": {
     "axios": "^0.16.2",

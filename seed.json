@@ -1,0 +1,72 @@
+{
+    "settings": {
+        "parseUrl": "http://localhost:1337/parse",
+        "appId": "sample2",
+        "masterKey" : "master"
+    },
+    "_User": [
+        {
+            "first_name": "Narmeet",
+            "last_name": "Singh",
+            "username": "narmeet",
+            "password": "qweqwe",
+            "accountType": "employer"
+        },
+        {
+            "first_name": "Rupam",
+            "last_name": "Biswas",
+            "username": "rupam",
+            "password": "qweqwe",
+            "accountType": "employer"
+        },
+        {
+            "first_name": "Faysal",
+            "last_name": "Ahmed",
+            "username": "kawsar",
+            "password": "qweqwe",
+            "accountType": "hiree"
+        },
+        {
+            "first_name": "Ramneek",
+            "last_name": "Handa",
+            "username": "ramneek",
+            "password": "qweqwe",
+            "accountType": "hiree"
+        },
+        {
+            "first_name": "Manpreet",
+            "last_name": "Singh",
+            "username": "manpreet",
+            "password": "qweqwe",
+            "accountType": "hiree"
+        }
+    ],
+    "company": [
+        {
+            "name": "cramstack",
+            "industry": "IT"
+        },
+        {
+            "name": "Inovio",
+            "industry": "Software"
+        },
+        {
+            "name": "HungryNaki",
+            "industry": "Food"
+        }
+    ],
+    "job": [
+        {
+            "title": "Node.js developer",
+            "jobType": "full-time"
+        },
+        {
+            "title": "Frontend developer",
+            "jobType": "contract"
+        },
+        {
+            "title": "Project Manager",
+            "jobType": "full-time"
+        }
+    ]
+}
