@@ -90,13 +90,13 @@ export function createCompanySchema() {
 
 
 export function createCompany(company) {
-  return axios.post(`${baseUrl}/classes/company`, company, simpleOptions)
+  return axios.post(`${baseUrl}/classes/company`, company, options)
     .then(res => {
       console.log('new company created', res.data)
       return res.data
     })
     .catch(err => {
-      console.log('company create fails', err.response.data)
+      console.log('company create fails', err.response)
       throw new Error('company create fails')
     })
 
@@ -118,25 +118,27 @@ export function associateUserInACompany(userId,companyId) {
   }
 
 
-  axios.put(`${baseUrl}/classes/company/${companyId}/`, data, simpleOptions)
+  return axios.put(`${baseUrl}/classes/company/${companyId}/`, data, options)
     .then(res => {
       console.log(`${userId} added in company ${companyId}`, res.data)
+      return res.data
     })
     .catch(err => {
       console.log('user association fails', err.response.data)
+      throw new Error('user association fails', err)
     })
 
 }
 
 
 export function createJob(job) {
-  return axios.post(`${baseUrl}/classes/job`, job, simpleOptions)
+  return axios.post(`${baseUrl}/classes/job`, job, options)
     .then(res => {
       console.log('new job created', res.data)
       return res.data
     })
     .catch(err => {
-      console.log('job create fails', err.response.data)
+      console.log('job create fails', err.response)
       throw new Error('job create fails', err)
     })
 
@@ -159,7 +161,7 @@ export function associateCompanyInAJob(jobId, companyId) {
   }
 
 
-  axios.put(`${baseUrl}/classes/job/${jobId}/`, data, simpleOptions)
+  axios.put(`${baseUrl}/classes/job/${jobId}/`, data, options)
     .then(res => {
       console.log(`${companyId} associated with job ${jobId}`, res.data)
     })

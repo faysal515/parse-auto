@@ -1,8 +1,8 @@
 {
     "settings": {
-        "parseUrl": "http://localhost:1337/parse",
-        "appId": "sample2",
-        "masterKey" : "master"
+        "parseUrl": "parseURL",
+        "appId": "appId",
+        "masterKey" : "masterKey"
     },
     "_User": [
         {
